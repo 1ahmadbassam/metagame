@@ -2,15 +2,15 @@ name: CI
 
 on:
   push:
-    branches: ["master"]
+    branches: ['master']
   pull_request:
-    branches: ["master"]
+    branches: ['master']
 
 jobs:
   quality-gate:
     name: Code Quality & Safety
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
